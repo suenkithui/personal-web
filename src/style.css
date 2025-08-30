@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* ---------- nav ---------- */
+.nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.nav ul {
+    background-color: black;
+    opacity: 0.7;
+    list-style-type: none;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.nav li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* -------- basis page setting --------- */
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 65px 12%;
+    background-color: #CED4DA;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to left, lightcyan, #87CEEB, #4682B4, #33ccff , #3366ff) 1;
+}
+
+#course {
+    border-bottom: none;
+}
+
+.page-title {
+    font-size: 70px;
+    text-align: center;
+}
+
+/* -------- homepage --------- */
+
+.home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home-content h1 {
+    margin-bottom: 20px;
+    font-size: 75px;
+}
+
+.home-content h3 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.homepage-link {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    gap: 40px;
+}
+
+.home-content img {
+    width: 40px;
+    transition: width 0.5s;
+}
+
+.home-content img:hover {
+    width: 50px;
+}
+
+/* ----------- About me --------- */
+
+#about {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-row {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.text-col {
+    flex-basis: 50%;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.img-col {
+    flex-basis: 50%;
+}
+
+.img-col img {
+    display: block;
+    margin: auto;
+}
+
+.text-col h2 {
+    font-size: 50px;
+}
+
+/* --------- Skilla ----------- */
+
+#skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex: 1;
+    gap: 20px;
+}
+
+.skill-block {
+    background-color: rgba(152, 156, 154, 0.1);
+    color:#1E3A8A;
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.3s color 0.3s;
+    user-select: none;
+}
+
+.skill-block:hover {
+    background-color: lightcoral;
+}
+
+/* -------------- courses --------------- */
+
+#courses {
+    display: flex;
+    flex-direction: column;
+}
+
+#courses table {
+    border: 1px solid black;
+    border-spacing: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    flex: 1;
+}
+
+#courses th, #courses td {
+    border: 1px solid black;
+    padding: 10px 20px;
+}
